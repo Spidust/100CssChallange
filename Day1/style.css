@@ -1,0 +1,95 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+	overflow: hidden;
+  background: linear-gradient(45deg, #433AA0, #4DC1C7);
+  color: #333;
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	
+	color: white;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.text > * {
+	text-transform: uppercase;
+	text-align: center;
+	margin: 0;
+}
+
+.a-hundred {
+	display: flex;
+}
+.a-hundred *:not(.one) {
+	box-shadow: rgba(0, 0, 0, 0.2) 0 0 5px;
+}
+.lower {
+	z-index: 1;
+}
+
+.upper {
+	z-index: 10;
+}
+
+.one {
+	display: flex;
+}
+
+.one * {
+	border-radius: 3px;
+}
+
+.one .diagnal {
+	width: 25px;
+	height: 50px;
+	transform: rotate(45deg) translate(5px, -2px);
+	background: #eee;
+}
+
+.one .vertical {
+	width: 25px;
+	height: 100px;
+	background: #fff;
+}
+
+.zero {
+	height: 100px;
+	width: 100px;
+	border-radius: 100%;
+	border: #fff 30px solid;
+	margin-left: -10px;
+}
+
+.days {
+	font-size: 80px;
+}
+
+p {
+	font-size: 20px;
+	transform: translateY(-10px);
+}
+
+.days, p {
+	font-weight: 900;
+}
