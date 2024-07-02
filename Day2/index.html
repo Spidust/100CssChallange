@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="frame">
+        <div class="center">
+            <div class="menu-icon">
+                <div class="line first no-animation"></div>
+                <div class="line second no-animation"></div>
+                <div class="line third no-animation"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const icon = document.querySelector(".menu-icon");
+
+        icon.addEventListener('click', (e) => {
+                icon.classList.toggle('active')
+                document.querySelectorAll('.line').forEach(i => i.classList.remove('no-animation'));
+            })
+    </script>
+</body>
+
+</html>
